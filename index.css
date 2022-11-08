@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: black;
+}
+header {
+  padding: 2rem, 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 250;
+  margin-bottom: 1rem;
+  color: beige;
+}
+
+#new-task-form {
+  display: flex;
+} 
+#new-task-input {
+  flex: 1 1 0%;
+  background-color: rgb(203, 203, 203);
+  color: grey;
+  padding: 1rem;
+  border-radius: 2rem;
+  margin-right: 2rem;
+  font-size: 2rem;
+}
+#new-task-input::placeholder {
+  color: black;
+}
+#new-task-submit {
+  color: black;
+  font-size: 2rem;
+  font-weight: 700;
+  
+}
+.task .actions button:hover {
+  opacity: 1;
+}
+.task .actions button:active {
+  opacity: 1;
+}
+main {
+  flex: 1 1 0%;
+  background-color: rgb(203, 203, 203);
+  color: grey;
+  padding: 1rem;
+  border-radius: 2rem;
+  margin-right: 2rem;
+  font-size: 2rem;
+}
+#task-list{
+    padding: 1rem;
+
+}
+#task-list h2{
+    font-size: 2rem;
+  font-weight: 250;
+  margin-bottom: 1rem; 
+  color: beige;
+}
+#tasks .task{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+
+}
+#tasks .task .content .text{
+color: grey;
+font-size: 2rem;
+width: 100%;
+display: block;
+transition: .5;
+
+}
+#tasks .task .content .text:not(:read-only) {
+     color: green
+
+    }
+    #tasks .task .actions {
+         display: flex;
+         margin: 0 -0.5rem;
+
+
+    }
+    .task .actions button{ 
+        cursor: pointer;
+        margin: 0 -.0.5rem;
+        font-size: 2rem;
+        font-weight: 700;
+        transition: .5;
+    }
+   
+    .task.actions button{
+        color: red;
+    }
