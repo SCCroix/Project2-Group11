@@ -10,13 +10,25 @@
 <body>
 <h1 id = "profileHeadline" class ="sectionStyle" > Profile </h1> <!-- headoline section -->
 <section id = "userInfo" class = "sectionStyle" >  <!-- User info Section -->
-    <img id = "profilePhoto" src="https://images.news18.com/ibnlive/uploads/2022/01/duck-nft-164327851216x9.png"></img>
-    <br>
-    <input type="text" id ="inputSrcProfileImg" name="profileImgSrc"></input>
-    <button id ="editProfileImg" type="button"> edit avatar </button> 
-    <h1 id="name"> Ducky Quac </h1>
-    <input type="text" id="bioEdit" name="bioBox"> I want to write something for my bio</input>
-    <p> Hi im a duck </p> 
+  
+    <div>
+     <img id = "profilePhoto" src="https://images.news18.com/ibnlive/uploads/2022/01/duck-nft-164327851216x9.png"></img>
+     <br>
+     <button id ="editProfileImg" type="button"> edit avatar </button> 
+     <br>
+     <input type="text" id ="inputSrcProfileImg" name="profileImgSrc"></input> <button  id ="uploadSrclinkProfileImg" type = "text" name="srcProfileImg">upload</button>
+    </div>
+    
+    <div> 
+     <h1 id="name"> Ducky Quac </h1>
+    </div>
+
+    <div>
+     <p> Hi im a duck </p> 
+     <button  id ="editBioButton" type = "text" name="editBio">edit bio</button>
+     <br>
+     <input type="text" id="bioEdit" name="bioBox"></input> <button  id ="updateBiocontentButton" type = "text" name="updateBiocontent">update</button>
+    </div>
 </section>
 <!-- section id = "userPost" class = "sectionStyle"> where the post happen </section> -->
 <section id = "userlikedPost"  > <!-- Liked posts secttion -->
