@@ -5,29 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Profile Page </title>
-    <link rel="stylesheet" href="profileStyle.css"> 
+    <link rel= "stylesheet" href= "profileStyle.css"> 
 </head>
 <body>
-<h1 id = "profileHeadline" class ="sectionStyle" > Profile </h1> <!-- headoline section -->
+<h1 id = "profileHeadline" class = "sectionStyle" > Profile </h1> <!-- headoline section -->
 <section id = "userInfo" class = "sectionStyle" >  <!-- User info Section -->
   
     <div>
-     <img id = "profilePhoto" src="https://images.news18.com/ibnlive/uploads/2022/01/duck-nft-164327851216x9.png"></img>
+     <img id = "profilePhoto" src = "https://images.news18.com/ibnlive/uploads/2022/01/duck-nft-164327851216x9.png"></img>
      <br>
-     <button id ="editProfileImg" type="button"> edit avatar </button> 
+     <button id = "editProfileImg" type= "button"> edit avatar </button> 
      <br>
-     <input type="text" id ="inputSrcProfileImg" name="profileImgSrc"></input> <button  id ="uploadSrclinkProfileImg" type = "text" name="srcProfileImg">upload</button>
+     </div>
+
+    <div id = "editImgDiv">
+     <input type = "text" id = "inputSrcProfileImg" name = "profileImgSrc"></input> 
+     <button id = "uploadSrclinkProfileImg" type = "text" name = "srcProfileImg">upload</button> 
+     <button id = "hideEditImgDiv" type = "text" name = "cancelEditImgSection" > cancel </button>
     </div>
     
     <div> 
-     <h1 id="name"> Ducky Quac </h1>
+     <h1 id = "name"> Ducky Quac </h1>
     </div>
 
     <div>
      <p> Hi im a duck </p> 
-     <button  id ="editBioButton" type = "text" name="editBio">edit bio</button>
+     <button  id = "editBioButton" type = "text" name = "editBio">edit bio</button>
      <br>
-     <input type="text" id="bioEdit" name="bioBox"></input> <button  id ="updateBiocontentButton" type = "text" name="updateBiocontent">update</button>
+    </div>
+
+    <div id = "editBioDiv"> 
+     <input type = "text" id = "bioEdit" name = "bioBox"></input> 
+     <button id = "updateBioContentButton" type = "text" name = "updateBiocontent">update</button>
+     <button id = "hideEditBioDiv" type = "text" name = "cancelEditBioSection"> cancel </button>
     </div>
 </section>
 <!-- section id = "userPost" class = "sectionStyle"> where the post happen </section> -->
@@ -38,5 +48,5 @@
     </ul> 
  </section>
 </body>
-<script src="profileScript.js"></script>
+<script src = "profileScript.js"></script>
 </html>
