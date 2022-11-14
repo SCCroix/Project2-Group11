@@ -10,6 +10,13 @@ let editProfileBioButton = document.querySelector("#editBioButton")
 let updateBioButton = document.querySelector("#updateBioContentButton")
 let cancelProfileBioButton = document.querySelector("#hideEditBioDiv")
 let bioContent = document.querySelector("#bioContent")
+// Local storage
+let profileImgUrl = localStorage.getItem("profileImgUrl")
+if (profileImgUrl == ""){
+    profileImgUrl = "https://t4.ftcdn.net/jpg/04/85/67/07/360_F_485670786_X9jhMQrKf27exSGzaJxjGMpI1z6TcnP6.jpg"
+}
+profilePhoto.src = profileImgUrl
+
 // Profile Img
 editProfileImgSection.style.display = "none";
 editProfileImgButton.addEventListener("click", function(){
@@ -21,10 +28,11 @@ cancelProfileImgButton.addEventListener("click",function(){
 uploadProfileImgButton.addEventListener("click", function(){
     let confirmChangedProfileImg = confirm("CONFIRM CHANGED: Do you want to change into your new profile image?")
     if (confirmChangedProfileImg) { // replace the new input to the src from  ID#profilePhto 
-        var x = $("#inputSrcProfileImg:text").val(); // access JQuery library to extract and store the input  of the input element speific to Profile Img src ID 
-        profilePhoto.src = x
-        console.log(x)
+        var urlProfileImg = $("#inputSrcProfileImg:text").val(); // access JQuery library to extract and store the input  of the input element speific to Profile Img src ID 
+        profilePhoto.src = urlProfileImg
+        console.log(urlProfileImg)
         editProfileImgSection.style.display = "none";
+        localStorage.setItem("profileImgUrl", urlProfileImg) // store the new input url of profile picture so when refesh it keeps the link
     } 
 })
 // Bio Content 
