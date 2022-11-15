@@ -1,110 +1,94 @@
 * {
-  box-sizing: border-box;
   margin: 0;
-  font-family: sans-serif;
+  padding: 0;
 }
 
 body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(116, 116, 116);
+  color: rgb(255, 255, 255);
+  line-height: 1.5;
+  height: 100vh;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  background-color: rgb(159, 159, 159);
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.8);
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+}
+.navbar ul li {
+  margin: 0 1rem;
+  padding: 1rem;
+}
+.navbar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+.navbar ul li a:hover {
+  color: aquamarine;
+}
+section {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  color: black;
-}
-header {
-  padding: 2rem, 1rem;
-  max-width: 800px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   width: 100%;
-  margin: 0 auto;
+  height: 100vh;
+  scroll-snap-align: center;
+}
+section h1 {
+  font-size: 4rem;
+}
+section p {
+  font-size: 1.5rem;
+  align-items: center;
+}
+.Streetwear {
+  background-image: url("../Explorepage/img/Streetwear.jpg")
+ ;
+ background-repeat:no-repeat ;
+ background-size: contain;
+ background-position: center;
 }
 
-header h1 {
-  font-size: 2rem;
-  font-weight: 250;
-  margin-bottom: 1rem;
-  color: beige;
-}
+.Steampunk {
+  background: url("../Explorepage/img/Steampunk2.jpg") ;
+  background-repeat:no-repeat ;
+  background-size: cover;
+  background-position:  fill ;
+ }
 
-#new-task-form {
-  display: flex;
-} 
-#new-task-input {
-  flex: 1 1 0%;
-  background-color: rgb(203, 203, 203);
-  color: grey;
-  padding: 1rem;
-  border-radius: 2rem;
-  margin-right: 2rem;
-  font-size: 2rem;
-}
-#new-task-input::placeholder {
-  color: black;
-}
-#new-task-submit {
-  color: black;
-  font-size: 2rem;
-  font-weight: 700;
-  
-}
-.task .actions button:hover {
-  opacity: 1;
-}
-.task .actions button:active {
-  opacity: 1;
-}
-main {
-  flex: 1 1 0%;
-  background-color: rgb(203, 203, 203);
-  color: grey;
-  padding: 1rem;
-  border-radius: 2rem;
-  margin-right: 2rem;
-  font-size: 2rem;
-}
-#task-list{
-    padding: 1rem;
-
-}
-#task-list h2{
-    font-size: 2rem;
-  font-weight: 250;
-  margin-bottom: 1rem; 
-  color: beige;
-}
-#tasks .task{
-    display: flex;
-    justify-content: space-between;
-    background-color: black;
-    padding: 1rem;
-    border-radius: 1rem;
-    margin-bottom: 1rem;
-
-}
-#tasks .task .content .text{
-color: grey;
-font-size: 2rem;
-width: 100%;
-display: block;
-transition: .5;
-
-}
-#tasks .task .content .text:not(:read-only) {
-     color: green
-
-    }
-    #tasks .task .actions {
-         display: flex;
-         margin: 0 -0.5rem;
+.Classic {
+  background: url("../Explorepage/img/Classic.jpg");
+  background-repeat:no-repeat ;
+  background-size: cover;
+  background-position: center;
+ }
 
 
-    }
-    .task .actions button{ 
-        cursor: pointer;
-        margin: 0 -.0.5rem;
-        font-size: 2rem;
-        font-weight: 700;
-        transition: .5;
-    }
-   
-    .task.actions button{
-        color: red;
-    }
+.Vintage {
+  background: url("../Explorepage/img/Vintage.jpg") ;
+  background-repeat:no-repeat ;
+  background-size: contain;
+  background-position: center;
+ }
+
+
