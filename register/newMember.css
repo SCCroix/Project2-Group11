@@ -1,0 +1,9 @@
+body {
+  background: #b7339a;
+  background: linear-gradient(to right, #8b2385, #5c137d);
+}
+
+.main-form {
+  display: flex;
+  justify-content: center;
+}

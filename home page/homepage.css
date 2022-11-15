@@ -1,0 +1,19 @@
+body {
+  background: #b7339a;
+  background: linear-gradient(to right, #8b2385, #5c137d);
+}
+
+.carousel-inner {
+  display: flex;
+  justify-content: center;
+}
+
+.loginBtn {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-inner {
+  max-height: 50rem;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px);
