@@ -28,11 +28,21 @@ cancelProfileImgButton.addEventListener("click",function(){
 uploadProfileImgButton.addEventListener("click", function(){
     let confirmChangedProfileImg = confirm("CONFIRM CHANGED: Do you want to change into your new profile image?")
     if (confirmChangedProfileImg) { // replace the new input to the src from  ID#profilePhto 
-        var urlProfileImg = $("#inputSrcProfileImg:text").val(); // access JQuery library to extract and store the input  of the input element speific to Profile Img src ID 
+        var urlProfileImg = $("#inputSrcProfileImg:text").val();
+        if (urlProfileImg == ""){
+            let emptyLinkAlert = confirm("This link is empty! Do you want to delete your existing profile photo?")
+            if (emptyLinkAlert) {
+                urlProfileImg = profileImgUrl;
+            } else {
+                return
+            } 
+        } 
+            // access JQuery library to extract and store the input  of the input element speific to Profile Img src ID 
         profilePhoto.src = urlProfileImg
         console.log(urlProfileImg)
         editProfileImgSection.style.display = "none";
         localStorage.setItem("profileImgUrl", urlProfileImg) // store the new input url of profile picture so when refesh it keeps the link
+       
     } 
 })
 // Bio Content 
