@@ -1,4 +1,44 @@
-body {
-  background: #b7339a;
-  background: linear-gradient(to right, #8b2385, #5c137d);
+body,
+html {
+  height: 100%;
+  margin: 0;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  color: #f1f1f1;
+  position: fixed;
+  border: 5px solid #f1f1f1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+
+.img1 {
+  background-image: url("https://www.styleforum.net/content/type/61/id/2385897/width/500/height/1000");
+}
+
+.img2 {
+  background-image: url("https://i.pinimg.com/originals/22/12/e7/2212e7560e485f1a19b1fc03273ad1e1.jpg");
+}
+
+.img3 {
+  background-image: url("https://i.pinimg.com/originals/da/90/bf/da90bf7009c73e0552a10773d954be33.jpg");
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px);
