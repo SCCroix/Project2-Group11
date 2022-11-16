@@ -7,3 +7,12 @@
     width : 200px;
     border-radius: 100%
 }
+#userLikedPost {
+
+}
+#userlikedPost {
+    background-color: rgb(208, 197, 183);
+}
+.col-styling {
+    text-align: center;
+}

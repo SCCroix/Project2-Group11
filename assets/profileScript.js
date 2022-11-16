@@ -1,4 +1,3 @@
-// Profile variable
 let editProfileImgSection = document.querySelector("#editImgDiv")
 let editProfileImgButton = document.querySelector("#editProfileImg")
 let uploadProfileImgButton = document.querySelector("#uploadSrclinkProfileImg")
@@ -57,4 +56,5 @@ updateBioButton.addEventListener("click", function(){
     let confirmEditBiocontent = confirm("CONFIRM EDITED: Do you want to updated new bio content?")
 })
 
+// liked post
 
